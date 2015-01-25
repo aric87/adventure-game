@@ -21,19 +21,19 @@ $(document).ready(function () {
 
         main.html(mainText);
         options.html('<button value="1" >' + buttonOne + '</button><button value="2">' + buttonTwo + '</button><button value="3">' + buttonThree + '</button>');
-        };
-        options.on('click', 'button', function (value) {
-            var value = $(this).val();
-            console.log(value);
-            if (value == 1) {
-                optionOne();
-            } else if (value == 2) {
-                optionTwo();
+    };
+    options.on('click', 'button', function (value) {
+        var value = $(this).val();
+        console.log(value);
+        if (value == 1) {
+            optionOne();
+        } else if (value == 2) {
+            optionTwo();
 
-            } else {
-                optionThree();
-            };
-        });
+        } else {
+            optionThree();
+        };
+    });
 
 
     function reset() {
@@ -57,9 +57,9 @@ $(document).ready(function () {
         var buttonOne = 'Kill him for bothering you further';
         var buttonTwo = 'Tell him your not interested, and leave';
         var buttonThree = 'Listen to his story';
-         optionOne = mob;
-         optionTwo = quit;
-         optionThree = help;
+        optionOne = mob;
+        optionTwo = quit;
+        optionThree = help;
         choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
@@ -71,7 +71,7 @@ $(document).ready(function () {
         var buttonThree = 'Stop him, your wasting time, and get going.';
         optionOne = listen;
         optionTwo = quit;
-         optionThree = headOut;
+        optionThree = headOut;
         choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
@@ -81,9 +81,9 @@ $(document).ready(function () {
         var buttonOne = 'Chase the beast';
         var buttonTwo = 'Not your problem';
         var buttonThree = 'Loathe in self pity';
-         optionOne = alone;
-         optionTwo = quit;
-         optionThree = quit;
+        optionOne = alone;
+        optionTwo = quit;
+        optionThree = quit;
         choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
@@ -94,79 +94,79 @@ $(document).ready(function () {
         var buttonTwo = 'Give up, this map is a hoax';
         var buttonThree = 'Grab some friends, this will be tough';
         optionOne = chaptwo;
-         optionTwo = quit;
-         optionThree = friends;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
+        optionTwo = quit;
+        optionThree = friends;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
-};
+    };
 
-function quit() {
-    var mainText = 'Well, I guess someone else can save the day, be the hero, get the girl... ';
-    var buttonOne = 'Game over';
-    var buttonTwo = 'Want to save the girl?';
-    var buttonThree = 'Try again!';
-   optionOne = reset;
-     optionTwo = reset;
-     optionThree = reset;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
+    function quit() {
+        var mainText = 'Well, I guess someone else can save the day, be the hero, get the girl... ';
+        var buttonOne = 'Game over';
+        var buttonTwo = 'Want to save the girl?';
+        var buttonThree = 'Try again!';
+        optionOne = reset;
+        optionTwo = reset;
+        optionThree = reset;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
-};
+    };
 
-function headOut() {
-    var mainText = 'The old man points down a dark, and dreary trail. You ask the man if he\'s coming, and he hands you a map and runs away. Well, that sucks. What to do now?';
-    var buttonOne = 'If he isn\'t going, you aren\'t either';
-    var buttonTwo = 'Take the map, and start walking';
-    var buttonThree = 'Go grab some friends';
-    optionOne = quit;
-    optionTwo = chaptwo;
-     optionThree = friends;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
-};
+    function headOut() {
+        var mainText = 'The old man points down a dark, and dreary trail. You ask the man if he\'s coming, and he hands you a map and runs away. Well, that sucks. What to do now?';
+        var buttonOne = 'If he isn\'t going, you aren\'t either';
+        var buttonTwo = 'Take the map, and start walking';
+        var buttonThree = 'Go grab some friends';
+        optionOne = quit;
+        optionTwo = chaptwo;
+        optionThree = friends;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
+    };
 
-function listen() {
-    var mainText = 'The man continues on, blathering about the beast... and on, and on, and on. The beast had hair, and claws, and he was 10 feet tall... and lion\'s and tiger\'s and bear\'s , oh my.  Finally, you stop him in mid sentence...';
-    var buttonOne = '\"Ok, old man.Let\'s go.\"';
-    var buttonTwo = '\"I changed my mind.\"?';
-    var buttonThree = '\"Strangle the old man, and go alone.\"';
-    optionOne = headOut;
-   optionTwo = quit;
-    optionThree = alone;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
-};
+    function listen() {
+        var mainText = 'The man continues on, blathering about the beast... and on, and on, and on. The beast had hair, and claws, and he was 10 feet tall... and lion\'s and tiger\'s and bear\'s , oh my.  Finally, you stop him in mid sentence...';
+        var buttonOne = '\"Ok, old man.Let\'s go.\"';
+        var buttonTwo = '\"I changed my mind.\"?';
+        var buttonThree = '\"Strangle the old man, and go alone.\"';
+        optionOne = headOut;
+        optionTwo = quit;
+        optionThree = alone;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
+    };
 
-function tavern() {
+    function tavern() {
 
-    var mainText = 'You burned the tavern down.Well done. Now everyone is in the street, and really mad at you. They chase you out of town. You had better go get that princess to prove you were right.';
-    var buttonOne = 'Head into the woods after the beast';
-    var buttonTwo = 'Give up, because everyone hates you anyway';
-    var buttonThree = 'Mo, really, go into the woods';
-    optionOne = chaptwo;
-     optionTwo = quit;
-  optionThree = chaptwo;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
-};
+        var mainText = 'You burned the tavern down.Well done. Now everyone is in the street, and really mad at you. They chase you out of town. You had better go get that princess to prove you were right.';
+        var buttonOne = 'Head into the woods after the beast';
+        var buttonTwo = 'Give up, because everyone hates you anyway';
+        var buttonThree = 'Mo, really, go into the woods';
+        optionOne = chaptwo;
+        optionTwo = quit;
+        optionThree = chaptwo;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
+    };
 
-function friends() {
-    var mainText = 'You run back to the tavern, and spill through the door, ranting about a beast in a castle, who kidnapped the old man\'s daughter. Everyone laughs. They just heard this story. No one believed him, and they won\'t believe you. Are you insane? ';
-    var buttonOne = 'Darn, guess I\'m going alone ';
-    var buttonTwo = 'This is impossible alone, guess she is on her own';
-    var buttonThree = 'Burn the tavern, then save the girl';
-   optionOne = chaptwo;
-   optionTwo = quit;
-  optionThree = tavern;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
-};
+    function friends() {
+        var mainText = 'You run back to the tavern, and spill through the door, ranting about a beast in a castle, who kidnapped the old man\'s daughter. Everyone laughs. They just heard this story. No one believed him, and they won\'t believe you. Are you insane? ';
+        var buttonOne = 'Darn, guess I\'m going alone ';
+        var buttonTwo = 'This is impossible alone, guess she is on her own';
+        var buttonThree = 'Burn the tavern, then save the girl';
+        optionOne = chaptwo;
+        optionTwo = quit;
+        optionThree = tavern;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
+    };
 
-function chaptwo() {
-    var mainText = 'You have reached chapter two';
-    var buttonOne = 'Sorry, writing';
-    var buttonTwo = 'the next chapter';
-    var buttonThree = 'for your enjoyment';
-   optionOne = reset;
-    optionTwo = reset;
-    optionThree = reset;
-    choice(mainText, buttonOne, buttonTwo, buttonThree);
+    function chaptwo() {
+        var mainText = 'You have reached chapter two';
+        var buttonOne = 'Sorry, writing';
+        var buttonTwo = 'the next chapter';
+        var buttonThree = 'for your enjoyment';
+        optionOne = reset;
+        optionTwo = reset;
+        optionThree = reset;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
-};
+    };
 
 });
