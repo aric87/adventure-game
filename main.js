@@ -1,6 +1,9 @@
 var main = $('#mainText');
 var next = $('#next');
 var options = $('#Options');
+var optionOne = " ";
+var optionTwo = " ";
+var optionThree = " ";
 $(document).ready(function () {
     start();
 
@@ -18,6 +21,7 @@ $(document).ready(function () {
 
         main.html(mainText);
         options.html('<button value="1" >' + buttonOne + '</button><button value="2">' + buttonTwo + '</button><button value="3">' + buttonThree + '</button>');
+        };
         options.on('click', 'button', function (value) {
             var value = $(this).val();
             console.log(value);
@@ -30,7 +34,7 @@ $(document).ready(function () {
                 optionThree();
             };
         });
-    };
+
 
     function reset() {
         start();
@@ -41,10 +45,10 @@ $(document).ready(function () {
         var buttonOne = 'Ignore the Crazy man';
         var buttonTwo = 'Ask him about his daughter';
         var buttonThree = 'Rally the crowd into a mob and kill the man';
-        var optionOne = ignore;
-        var optionTwo = help;
-        var optionThree = mob;
-        choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+        optionOne = ignore;
+        optionTwo = help;
+        optionThree = mob;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
 
@@ -53,10 +57,10 @@ $(document).ready(function () {
         var buttonOne = 'Kill him for bothering you further';
         var buttonTwo = 'Tell him your not interested, and leave';
         var buttonThree = 'Listen to his story';
-        var optionOne = mob;
-        var optionTwo = quit;
-        var optionThree = help;
-        choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+         optionOne = mob;
+         optionTwo = quit;
+         optionThree = help;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
 
@@ -65,10 +69,10 @@ $(document).ready(function () {
         var buttonOne = 'Listen to more of the story';
         var buttonTwo = 'Tell him you lost interest, and leave';
         var buttonThree = 'Stop him, your wasting time, and get going.';
-        var optionOne = listen;
-        var optionTwo = quit;
-        var optionThree = headOut;
-        choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+        optionOne = listen;
+        optionTwo = quit;
+         optionThree = headOut;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
 
@@ -77,10 +81,10 @@ $(document).ready(function () {
         var buttonOne = 'Chase the beast';
         var buttonTwo = 'Not your problem';
         var buttonThree = 'Loathe in self pity';
-        var optionOne = alone;
-        var optionTwo = quit;
-        var optionThree = quit;
-        choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+         optionOne = alone;
+         optionTwo = quit;
+         optionThree = quit;
+        choice(mainText, buttonOne, buttonTwo, buttonThree);
 
     };
 
@@ -89,10 +93,10 @@ $(document).ready(function () {
         var buttonOne = 'Follow the map';
         var buttonTwo = 'Give up, this map is a hoax';
         var buttonThree = 'Grab some friends, this will be tough';
-        var optionOne = chaptwo;
-        var optionTwo = quit;
-        var optionThree = friends;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+        optionOne = chaptwo;
+         optionTwo = quit;
+         optionThree = friends;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 
 };
 
@@ -101,10 +105,10 @@ function quit() {
     var buttonOne = 'Game over';
     var buttonTwo = 'Want to save the girl?';
     var buttonThree = 'Try again!';
-    var optionOne = reset;
-    var optionTwo = reset;
-    var optionThree = reset;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+   optionOne = reset;
+     optionTwo = reset;
+     optionThree = reset;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 
 };
 
@@ -113,10 +117,10 @@ function headOut() {
     var buttonOne = 'If he isn\'t going, you aren\'t either';
     var buttonTwo = 'Take the map, and start walking';
     var buttonThree = 'Go grab some friends';
-    var optionOne = quit;
-    var optionTwo = chaptwo;
-    var optionThree = friends;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+    optionOne = quit;
+    optionTwo = chaptwo;
+     optionThree = friends;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 };
 
 function listen() {
@@ -124,22 +128,22 @@ function listen() {
     var buttonOne = '\"Ok, old man.Let\'s go.\"';
     var buttonTwo = '\"I changed my mind.\"?';
     var buttonThree = '\"Strangle the old man, and go alone.\"';
-    var optionOne = headOut;
-    var optionTwo = quit;
-    var optionThree = alone;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+    optionOne = headOut;
+   optionTwo = quit;
+    optionThree = alone;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 };
 
 function tavern() {
 
     var mainText = 'You burned the tavern down.Well done. Now everyone is in the street, and really mad at you. They chase you out of town. You had better go get that princess to prove you were right.';
-    var buttonOne = 'hard';
-    var buttonTwo = 'nice';
-    var buttonThree = 'crazy';
-    var optionOne = mob;
-    var optionTwo = quit;
-    var optionThree = help;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+    var buttonOne = 'Head into the woods after the beast';
+    var buttonTwo = 'Give up, because everyone hates you anyway';
+    var buttonThree = 'Mo, really, go into the woods';
+    optionOne = chaptwo;
+     optionTwo = quit;
+  optionThree = chaptwo;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 };
 
 function friends() {
@@ -147,21 +151,21 @@ function friends() {
     var buttonOne = 'Darn, guess I\'m going alone ';
     var buttonTwo = 'This is impossible alone, guess she is on her own';
     var buttonThree = 'Burn the tavern, then save the girl';
-    var optionOne = chaptwo;
-    var optionTwo = quit;
-    var optionThree = tavern;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+   optionOne = chaptwo;
+   optionTwo = quit;
+  optionThree = tavern;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 };
 
 function chaptwo() {
     var mainText = 'You have reached chapter two';
-    var buttonOne = ' ';
-    var buttonTwo = ' ';
-    var buttonThree = ' ';
-    var optionOne = reset;
-    var optionTwo = reset;
-    var optionThree = reset;
-    choice(mainText, buttonOne, buttonTwo, buttonThree, optionOne, optionTwo, optionThree);
+    var buttonOne = 'Sorry, writing';
+    var buttonTwo = 'the next chapter';
+    var buttonThree = 'for your enjoyment';
+   optionOne = reset;
+    optionTwo = reset;
+    optionThree = reset;
+    choice(mainText, buttonOne, buttonTwo, buttonThree);
 
 };
 
