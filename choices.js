@@ -109,8 +109,14 @@ var chaptwo = {
     optionThree:'moral'
 };
 
-function moral() {
-    alert('Your conscience gets the best of you, and you decide not to stop. You have come this far, go get the girl');
+var moral = {
+    mainText:'You start heading back to town, but your conscience is getting the best of you, and you decide maybe you shouldn\'t stop. You have come this far, why not go get the girl',
+    buttonOne:'Forget your conscience',
+    buttonTwo:'Turn towards the safer road, and save the day',
+    buttonThree:'Take the short route, and save the day, faster',
+    optionOne:'safeRoute',
+    optionTwo:'shortRoute',
+    optionThree:'quit'
 };
 
 var shortRoute = {
@@ -120,7 +126,7 @@ var shortRoute = {
     buttonThree: 'Fight them',
     optionOne: 'feed',
     optionTwo: 'companion',
-    optionThree: 'death'
+    optionThree: 'fight'
 
 };
 
@@ -146,12 +152,14 @@ var companion = {
 
 };
 
-function liveWolves() {
-    var fork = confirm('Although your new friends have accepted you, they are migratory and don\'t have a place for you to live. You realize sleeping in the woods, and eating berries all the time, would not be very satisfying. You decide to gather food to feed your new friends.');
-    if (fork == true) {
-//        gatherFoodShort(),
-    } else {//        shortRouteTwoWolves(),
-    };
+var liveWolves = {
+    mainText: 'Although your new friends have accepted you, they are migratory and don\'t have a place for you to live. You realize sleeping in the woods, and eating berries all the time, would not be very satisfying. You decide to gather food to feed your new friends.',
+    buttonOne: 'Continue down the short road',
+    buttonTwo: 'Gather some food',
+    buttonThree: 'Really, it\'s a good idea to gather some food',
+    optionOne: 'shortRouteTwoWolves',
+    optionTwo: 'gatherFoodShort',
+    optionThree: 'gatherFoodShort'
 };
 
 var fight = {
@@ -164,13 +172,14 @@ var fight = {
     optionThree: 'death'
 };
 
-function run() {
-    var fork = confirm('The only way your going to make it is with a distraction. You can try dropping some of your food, to slow them down. If you don\t, the wolves will surely catch you.');
-    if (fork == true) {
-//        runFood(),
-    } else {
-//        death(),
-    };
+var run = {
+    mainText: 'The only way your going to make it is with a distraction. You can try dropping some of your food, to slow them down. If you don\t, the wolves will surely catch you.',
+    buttonOne:'Drop your food, you can get more',
+    buttonTwo:'Keep your food, you won a marathon once',
+    buttonThree:'Stop, and try to reason with them... it might be better than dying tired',
+    optionOne:'runFood',
+    optionTwo:'death',
+    optionThree:'death'
 };
 
 var runFood = {
@@ -183,9 +192,14 @@ var runFood = {
     optionThree: 'gatherFoodLong'
 };
 
-function gatherFoodLong() {
-    alert('You gather some food, and get ready to head down the long road. This route is safer, so it should be an easier trek.');
-    //safeRoute(),
+var gatherFoodLong = {
+    mainText: 'You gather some food, and get ready to head down the long road. This route is safer, so it should be an easier trek. On your way back you start thinking about home.',
+    buttonOne:'Save the princess, and go down the long road',
+    buttonTwo:'After the wolves, what more could happen?',
+    buttonThree:'give up, and head home',
+    optionOne:'safeRoute',
+    optionTwo:'safeRoute',
+    optionThree:'quit'
 };
 
 var hungry = {
@@ -200,7 +214,7 @@ var hungry = {
 
 var gatherFoodShort = {
     /*this route has wolf companions*/
-    mainText: 'You gather food up for you and your friends. You head doen the path, and the wolves follow you. You arrive at the edge of the path, and see the castle. Having a group of wolves with you prevents you from heading up the road to the nearest town to get more help, or provisions. The sun is starting to set.',
+    mainText: 'You gather food up for you and your friends. You head down the path, and the wolves follow you. You arrive at the edge of the path, and see the castle. Having a group of wolves with you prevents you from heading up the road to the nearest town to get more help, or provisions. The sun is starting to set.',
     buttonOne: 'Head into the castle',
     buttonTwo: 'Wait until morning',
     buttonThree: 'Head to town anyway',
@@ -209,9 +223,14 @@ var gatherFoodShort = {
     optionThree: 'townWolves'
 };
 
-function shortRouteTwoWolves() {
-    alert('You decide to continue down the road. Although the wolves have become your friends, they know you have no more food and disband.');
-    //shortRouteTwo(),
+var shortRouteTwoWolves = {
+    mainText:'You decide to continue down the road. Although the wolves have become your friends, they know you have no more food and disband.',
+    buttonOne:'Who needs them, anyway.',
+    buttonTwo:'Gather some food, and go get them back',
+    buttonThree:'Maybe you will see them again, on the way back',
+    optionOne:'shortRouteTwo',
+    optionTwo:'gatherFoodShort',
+    optionThree:'shortRouteTwo'
 };
 
 var shortRouteTwo = {
@@ -224,9 +243,14 @@ var shortRouteTwo = {
     optionThree: 'goTown'
 };
 
-function death() {
-    alert('That went well. Your hero has died, leaving the princess in the clutches of the horrible beast. Bummer.');
-    reset();
+var death = {
+    mainText:'That went well. Your hero has died, leaving the princess in the clutches of the horrible beast. Bummer.',
+    buttonOne:'Try again, from the beginning',
+    buttonTwo:'Start from the fork in the road',
+    buttonThree:'Thanks for playing!!',
+    optionOne:'reset',
+    optionTwo:'chapTwo',
+    optionThree:'reset'
 };
 
 var safeRoute = {
@@ -240,13 +264,14 @@ var safeRoute = {
 
 };
 
-function overTheCliff() {
-    alert('You knock on the front door, and a talking clock answers. He tells you to run. Thinking that you are losing it, you decide to walk to the edge of the path and wait. As soon as you turn around, a whoosh of air goes past your head. You are face to face with the beast. He picks you up, carries you to the top of the castle, and throws you off. Luckily, you land in a haystack and are brought to the local town by a merchant. ');
-};
-
-function death() {
-    alert('That went well. Your hero has died, leaving the princess in the clutches of the horrible beast. Bummer.');
-    reset();
+var overTheCliff = {
+    maintText: 'You knock on the front door, and a talking clock answers. He tells you to run. Thinking that you are losing it, you decide to walk to the edge of the path and wait. As soon as you turn around, a whoosh of air goes past your head. You are face to face with the beast. He picks you up, carries you to the top of the castle, and throws you off. Luckily, you land in a haystack and awaken to the sounds of a passing merchant',
+    buttonOne:'Follow him back to town',
+    buttonTwo:'Ignore him, and wait until morning',
+    buttonThree:'He\'s huge. Quit now, or you will surely die',
+    optionOne:'goTown',
+    optionTwo:'wait',
+    optionThree:'quit'
 };
 
 var goTown = {
@@ -260,9 +285,15 @@ var goTown = {
 
 };
 
-function steal() {
-    alert('You get caught, and the village people lock you into the stocks. They value honor, and decide to hang you.');
-    death();
+var steal = {
+    mainText: 'You get caught, and the village people lock you into the stocks. They value honor, and decide to hang you. You can try to convince them that your cause is noble, and maybe they will let you live.',
+    buttonOne:'Tell them your story',
+    buttonTwo:'Accept your punishment',
+    buttonThree:'Offer them some money',
+    optionOne:'chapThree',
+    optionTwo:'death',
+    optionThree:'death'
+
 };
 
 var wait = {
@@ -276,9 +307,14 @@ var wait = {
 
 };
 
-function climb() {
-    alert('You start climbing the castle wall, and realize that it\'s too slippery. Having exhausted all other options, you head for the tunnel. Starting in the basement wasn\'t your first choice, but it will have to do.');
-    //chapThree();
+var climb = {
+    mainText:'You start climbing the castle wall, and realize that it\'s too slippery. Having exhausted all other options, you head for the tunnel. Starting in the basement wasn\'t your first choice, but it will have to do.',
+    buttonOne:'You head to the tunnel',
+    buttonTwo:'The basement has a bad smell',
+    buttonThree:'The door is ornate, however',
+    optionOne:'chapThree',
+    optionTwo:'chapThree',
+    optionThree:'chapThree'
 };
 
 var castleWolves = {
@@ -292,19 +328,34 @@ var castleWolves = {
 
 };
 
-function frontDoor() {
-    alert('The beast smells the wolves and meets you at the front door. After he finishes wiping out the wolves, he turns to you. Luckily, you are able to run and hide before he see\'s you. You wait for hours before you look up. In front of you lies the entrance to the tunnel.');
-    //chapThree();
+var frontDoor = {
+    mainText:'The beast smells the wolves and meets you at the front door. After he finishes wiping out the wolves, he turns to you. Luckily, you are able to run and hide before he see\'s you. You wait for hours before you look up. In front of you lies the entrance to the tunnel.',
+    buttonOne:'You head to the tunnel',
+    buttonTwo:'The basement has a bad smell',
+    buttonThree:'The door is ornate, however',
+    optionOne:'chapThree',
+    optionTwo:'chapThree',
+    optionThree:'chapThree'
 };
 
-function castleDark() {
-    alert('You try to get into the castle at night. The beast catches you and scares off all of the wolves. Luckily, you make it outta there. You sleep in the woods until morning. When you wake up, a passing merchant points you to a tunnel that goes into the basement.');
-    //chapThree(),
+var castleDark = {
+    mainText:'You try to get into the castle at night. The beast catches you and scares off all of the wolves. Luckily, you make it outta there. You sleep in the woods until morning. When you wake up, a passing merchant points you to a tunnel that goes into the basement.',
+    buttonOne:'You head to the tunnel',
+    buttonTwo:'The basement has a bad smell',
+    buttonThree:'The door is ornate, however',
+    optionOne:'chapThree',
+    optionTwo:'chapThree',
+    optionThree:'chapThree'
 };
 
-function townWolves() {
-    alert('You bring your pack of wolves into town. The towns folk start shooting. You just lost the only allies you had, and the townsfolk sent you packing. Whoops. Guess it\'s you versus the beast. Luckily, on the way back to the castle, you notice there is a tunnel into the castle... You decide it\'s shorter than going all the way to the front door.');
-    //chapThree();
+var townWolves = {
+    mainText:'You bring your pack of wolves into town. The towns folk start shooting. You just lost the only allies you had, and the townsfolk sent you packing. Whoops. Guess it\'s you versus the beast. Luckily, on the way back to the castle, you notice there is a tunnel into the castle... You decide it\'s shorter than going all the way to the front door.',
+    buttonOne:'You head to the tunnel',
+    buttonTwo:'The basement has a bad smell',
+    buttonThree:'The door is ornate, however',
+    optionOne:'chapThree',
+    optionTwo:'chapThree',
+    optionThree:'chapThree'
 };
 
 /* chapter three will begin at the tunnel. */
@@ -313,9 +364,9 @@ var chapThree = {
     buttonOne:'Try again, for more action',
     buttonTwo:'Sorry, this takes time.',
     buttonThree:'Start over',
-    optionOne: reset(),
-    optionTwo: reset(),
-    optionThree: reset()
+    optionOne: 'reset',
+    optionTwo: 'reset',
+    optionThree: 'reset'
 
 };
 
@@ -324,11 +375,11 @@ var chapThreeWolves = {
     buttonOne:'Try again, for more action',
     buttonTwo:'Sorry, this takes time.',
     buttonThree:'Start over',
-    optionOne:reset(),
-    optionTwo:reset(),
-    optionThree: reset()
+    optionOne:'reset',
+    optionTwo:'reset',
+    optionThree: 'reset'
 };
-function reset(){};
+
 /**
  * Created by aricjohnson on 3/7/15.
  */
