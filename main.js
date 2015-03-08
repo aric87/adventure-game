@@ -6,9 +6,6 @@ var optionTwo = " ";
 var optionThree = " ";
 $(document).ready(function () {
     start();
-
-
-
     function start() {
         main.html('Welcome to the Adventure of a lifetime. You will embark on a voyage to save the princess from the evil Bowser. Choose carefully, adventurer, as your decisions affect the outcome!');
         next.click(function () {
