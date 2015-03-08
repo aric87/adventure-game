@@ -1,11 +1,11 @@
-var chapOne = {
+var chap1 = {
     mainText:'We meet our hero in a tavern, enjoying a flaggon of ale. An elder man spills through the door, ranting about a beast in a castle, who kidnapped his daughter. Everyone laughs, and brushes him off. What would you do?',
     buttonOne: 'Ignore the Crazy man',
     buttonTwo: 'Ask him about his daughter',
     buttonThree: 'Rally the crowd into a mob and kill the man',
-    optionOne: ignore,
-    optionTwo: help,
-    optionThree: mob
+    optionOne: 'ignore',
+    optionTwo: 'help',
+    optionThree: 'mob'
 };
 
 var ignore = {
@@ -13,9 +13,9 @@ var ignore = {
     buttonOne: 'Kill him for bothering you further',
     buttonTwo: 'Tell him your not interested, and leave',
     buttonThree: 'Listen to his story',
-    optionOne: mob,
-    optionTwo: quit,
-    optionThree: help
+    optionOne: 'mob',
+    optionTwo: 'quit',
+    optionThree: 'help'
 };
 
 var help = {
@@ -23,9 +23,9 @@ var help = {
     buttonOne: 'Listen to more of the story',
     buttonTwo: 'Tell him you lost interest, and leave',
     buttonThree: 'Stop him, your wasting time, and get going.',
-    optionOne: listen,
-    optionTwo: quit,
-    optionThree: headOut
+    optionOne: 'listen',
+    optionTwo: 'quit',
+    optionThree: 'headOut'
 };
 
 var mob = {
@@ -33,9 +33,9 @@ var mob = {
     buttonOne: 'Chase the beast',
     buttonTwo: 'Not your problem',
     buttonThree: 'Loathe in self pity',
-    optionOne: alone,
-    optionTwo: quit,
-    optionThree: quit
+    optionOne: 'alone',
+    optionTwo: 'quit',
+    optionThree: 'quit'
 };
 
 var alone = {
@@ -43,9 +43,9 @@ var alone = {
     buttonOne :'Follow the map',
     buttonTwo :'Give up, this map is a hoax',
     buttonThree:'Grab some friends, this will be tough',
-    optionOne: chaptwo,
-    optionTwo :quit,
-    optionThree: friends
+    optionOne: 'chaptwo',
+    optionTwo :'quit',
+    optionThree: 'friends'
 
 };
 
@@ -54,9 +54,9 @@ var quit = {
     buttonOne:'Game over',
     buttonTwo:'Want to save the girl?',
     buttonThree:'Try again!',
-    optionOne:reset,
-    optionTwo:reset,
-    optionThree:reset
+    optionOne:'reset',
+    optionTwo:'reset',
+    optionThree:'reset'
 
 };
 
@@ -65,9 +65,9 @@ var headOut = {
     buttonOne:'If he isn\'t going, you aren\'t either',
     buttonTwo:'Take the map, and start walking',
     buttonThree:'Go grab some friends',
-    optionOne:quit,
-    optionTwo:chaptwo,
-    optionThree:friends
+    optionOne:'quit',
+    optionTwo:'chaptwo',
+    optionThree:'friends'
 };
 
 var listen = {
@@ -75,9 +75,9 @@ var listen = {
     buttonOne:'\"Ok, old man.Let\'s go.\"',
     buttonTwo:'\"I changed my mind.\"?',
     buttonThree:'\"Strangle the old man, and go alone.\"',
-    optionOne:headOut,
-    optionTwo:quit,
-    optionThree:alone
+    optionOne:'headOut',
+    optionTwo:'quit',
+    optionThree:'alone'
 };
 
 var tavern = {
@@ -85,9 +85,9 @@ var tavern = {
     buttonOne:'Head into the woods after the beast',
     buttonTwo:'Give up, because everyone hates you anyway',
     buttonThree:'Mo, really, go into the woods',
-    optionOne:chaptwo,
-    optionTwo:quit,
-    optionThree:chaptwo
+    optionOne:'chaptwo',
+    optionTwo:'quit',
+    optionThree:'chaptwo'
 };
 
 var friends = {
@@ -95,19 +95,18 @@ var friends = {
     buttonOne:'Darn, guess I\'m going alone ',
     buttonTwo:'This is impossible alone, guess she is on her own',
     buttonThree:'Burn the tavern, then save the girl',
-    optionOne:chaptwo,
-    optionTwo:quit,
-    optionThree:tavern
+    optionOne:'chaptwo',
+    optionTwo:'quit',
+    optionThree:'tavern'
 };
-
 var chaptwo = {
     mainText:'You look at your map... It seems there is a fork in the road up ahead. Well, isn\'t that exciting. There\'s a short road! When you arrive at the fork, you notice the shorter road is a little grown in, and it seems to have an ominous feeling. The longer way is very well worn, and looks to have been traveled frequently. ',
     buttonOne:'Take the sort route, and take your chances',
     buttonTwo:'The well traveled road seems safer',
     buttonThree:'Turn back',
-    optionOne:shortRoute,
-    optionTwo:safeRoute,
-    optionThree:moral
+    optionOne:'shortRoute',
+    optionTwo:'safeRoute',
+    optionThree:'moral'
 };
 
 function moral() {
@@ -119,9 +118,9 @@ var shortRoute = {
     buttonOne: 'Offer them your food',
     buttonTwo: 'Try to talk them out of eating you',
     buttonThree: 'Fight them',
-    optionOne: feed,
-    optionTwo: companion,
-    optionThree: death
+    optionOne: 'feed',
+    optionTwo: 'companion',
+    optionThree: 'death'
 
 };
 
@@ -130,9 +129,9 @@ var feed = {
     buttonOne: 'continue donw the short path',
     buttonTwo: 'hurry back to the long path, without food',
     buttonThree: 'Slowly head back, gathering food on the way',
-    optionOne: shortRouteTwo,
-    optionTwo: hungry,
-    optionThree: gatherFoodLong
+    optionOne: 'shortRouteTwo',
+    optionTwo: 'hungry',
+    optionThree: 'gatherFoodLong'
 
 };
 
@@ -141,9 +140,9 @@ var companion = {
     buttonOne: 'Continue down the short road',
     buttonTwo: 'Gather some food',
     buttonThree: 'Live with the wolves, who needs a princess',
-    optionOne: shortRouteTwoWolves,
-    optionTwo: gatherFoodShort,
-    optionThree: liveWolves
+    optionOne: 'shortRouteTwoWolves',
+    optionTwo: 'gatherFoodShort',
+    optionThree: 'liveWolves'
 
 };
 
@@ -160,13 +159,13 @@ var fight = {
     buttonOne: 'Try to feed them',
     buttonTwo: 'Run. Fast.',
     buttonThree: 'Fight them anyway, maybe you\'ll intimidate them',
-    optionOne: feed,
-    optionTwo: run,
-    optionThree: death
+    optionOne: 'feed',
+    optionTwo: 'run',
+    optionThree: 'death'
 };
 
 function run() {
-    var fork = confirm('The only way your going to make it is with a distraction. Yo can try dropping some of your food, to slow them down. If you don\t, the wolves will surely catch you.'),
+    var fork = confirm('The only way your going to make it is with a distraction. You can try dropping some of your food, to slow them down. If you don\t, the wolves will surely catch you.');
     if (fork == true) {
 //        runFood(),
     } else {
@@ -179,40 +178,39 @@ var runFood = {
     buttonOne: 'Short route, you don\'t want to be hungry',
     buttonTwo: 'Long road, you can make it without food.',
     buttonThree: 'Stop and gather some food. You\'ll need it to fight the beast.',
-    optionOne: shortRouteTwo,
-    optionTwo: hungry,
-    optionThree: gatherFoodLong
+    optionOne: 'shortRouteTwo',
+    optionTwo: 'hungry',
+    optionThree: 'gatherFoodLong'
 };
 
 function gatherFoodLong() {
-    alert('You gather some food, and get ready to head down the long road. This route is safer, so it should be an easier trek.'),
+    alert('You gather some food, and get ready to head down the long road. This route is safer, so it should be an easier trek.');
     //safeRoute(),
 };
 
 var hungry = {
-    mainText: 'You decide to go down the long path without food. That was really a bad idea! Who travels through the woods, to save a princess, without food?! You arrive at the gate of the castle, and faint from hunger. Luckily, a traveling merchant scoops you up and brings you back to town. After some nourishment, and some storytelling from the local crowd, he drops you back at the fork in the road. You wake up, fully refreshed... and wonder how you got back here? Luckily, he left you with food. '
+    mainText: 'You decide to go down the long path without food. That was really a bad idea! Who travels through the woods, to save a princess, without food?! You arrive at the gate of the castle, and faint from hunger. Luckily, a traveling merchant scoops you up and brings you back to town. After some nourishment, and some storytelling from the local crowd, he drops you back at the fork in the road. You wake up, fully refreshed... and wonder how you got back here? Luckily, he left you with food. ',
     buttonOne: 'Short route',
     buttonTwo: 'Long road',
     buttonThree: 'Quit',
-    optionOne: shortRouteTwo,
-    optionTwo: safeRoute,
-    optionThree: quit,
+    optionOne: 'shortRouteTwo',
+    optionTwo: 'safeRoute',
+    optionThree: 'quit'
 };
 
 var gatherFoodShort = {
     /*this route has wolf companions*/
-    mainText: 'You gather food up for you and your friends. You head doen the path, and the wolves follow you. You arrive at the edge of the path, and see the castle. Having a group of wolves with you prevents you from heading up the road to the nearest town to get more help, or provisions. The sun is starting to set.'
+    mainText: 'You gather food up for you and your friends. You head doen the path, and the wolves follow you. You arrive at the edge of the path, and see the castle. Having a group of wolves with you prevents you from heading up the road to the nearest town to get more help, or provisions. The sun is starting to set.',
     buttonOne: 'Head into the castle',
     buttonTwo: 'Wait until morning',
     buttonThree: 'Head to town anyway',
-    optionOne: castleDark,
-    optionTwo: castleWolves,
-    optionThree: townWolves,
-
+    optionOne: 'castleDark',
+    optionTwo: 'castleWolves',
+    optionThree: 'townWolves'
 };
 
 function shortRouteTwoWolves() {
-    alert('You decide to continue down the road. Although the wolves have become your friends, they know you have no more food and disband.'),
+    alert('You decide to continue down the road. Although the wolves have become your friends, they know you have no more food and disband.');
     //shortRouteTwo(),
 };
 
@@ -221,9 +219,9 @@ var shortRouteTwo = {
     buttonOne: 'Head into the castle alone',
     buttonTwo: 'Wait for someone to help you',
     buttonThree: 'Go up the path, and look for help',
-    optionOne: chapThree,
-    optionTwo: wait,
-    optionThree: goTown
+    optionOne: 'chapThree',
+    optionTwo: 'wait',
+    optionThree: 'goTown'
 };
 
 function death() {
@@ -236,9 +234,9 @@ var safeRoute = {
     buttonOne: 'Walk up to the front door, and knock',
     buttonTwo: 'Stay at the edge of the path until morning',
     buttonThree: 'Start over',
-    optionOne: overTheCliff,
-    optionTwo: wait,
-    optionThree: goTown
+    optionOne: 'overTheCliff',
+    optionTwo: 'wait',
+    optionThree: 'goTown'
 
 };
 
@@ -256,9 +254,9 @@ var goTown = {
     buttonOne: 'Try to steal some supplies',
     buttonTwo: 'head to the tunnel',
     buttonThree: 'Head home',
-    optionOne: steal,
-    optionTwo: chapThree,
-    optionThree: quit
+    optionOne: 'steal',
+    optionTwo: 'chapThree',
+    optionThree: 'quit'
 
 };
 
@@ -272,9 +270,9 @@ var wait = {
     buttonOne: 'Head up to the door',
     buttonTwo: 'Try sneaking in the tunnel',
     buttonThree: 'Try climbing the castle.',
-    optionOne: overTheCliff,
-    optionTwo: chapThree,
-    optionThree: climb
+    optionOne: 'overTheCliff',
+    optionTwo: 'chapThree',
+    optionThree: 'climb'
 
 };
 
@@ -288,9 +286,9 @@ var castleWolves = {
     buttonOne: 'Head to the tunnel',
     buttonTwo: 'Head to town',
     buttonThree: 'Try the front door',
-    optionOne: chapThreeWolves,
-    optionTwo: townWolves,
-    optionThree: frontDoor
+    optionOne: 'chapThreeWolves',
+    optionTwo: 'townWolves',
+    optionThree: 'frontDoor'
 
 };
 
@@ -300,7 +298,7 @@ function frontDoor() {
 };
 
 function castleDark() {
-    alert('You try to get into the castle at night. The beast catches you and scares off all of the wolves. Luckily, you make it outta there. You sleep in the woods until morning. When you wake up, a passing merchant points you to a tunnel that goes into the basement.'),
+    alert('You try to get into the castle at night. The beast catches you and scares off all of the wolves. Luckily, you make it outta there. You sleep in the woods until morning. When you wake up, a passing merchant points you to a tunnel that goes into the basement.');
     //chapThree(),
 };
 
@@ -315,9 +313,9 @@ var chapThree = {
     buttonOne:'Try again, for more action',
     buttonTwo:'Sorry, this takes time.',
     buttonThree:'Start over',
-    optionOne: reset,
-    optionTwo: reset,
-    optionThree: reset
+    optionOne: reset(),
+    optionTwo: reset(),
+    optionThree: reset()
 
 };
 
@@ -326,11 +324,12 @@ var chapThreeWolves = {
     buttonOne:'Try again, for more action',
     buttonTwo:'Sorry, this takes time.',
     buttonThree:'Start over',
-    optionOne:reset,
-    optionTwo:reset,
-    optionThree: reset
+    optionOne:reset(),
+    optionTwo:reset(),
+    optionThree: reset()
 };
-
+function reset(){};
 /**
  * Created by aricjohnson on 3/7/15.
  */
+
