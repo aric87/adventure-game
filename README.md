@@ -1,8 +1,19 @@
 # adventure-game
 ##Purpose 
-This is a choose your own adventure game. The stoyline offers four options at each juncture, but some overlap.
-The base code will be refactored to be arrays of objects, and then the project will be made open for public contribution. 
+This is a choose your own adventure game. The story line offers three options at each juncture, but some overlap.
+The story is very loosely inspired by a popular Disney movie.
 
 ##Contribution
-The story can use some work, and I would love to add some html canvas animations, or some sort of visual engagement. 
-To contribute, fork the repo, and submit a pull request to the preview branch. 
+To contribute, fork the repo, and submit all pull requests to the preview branch. Contributors will be added to the
+credits page, once that is implemented. Any issues or ideas should be submitted as repo issues.
+
+To add pieces to the story, create a new object, following the format of the others. The mainText will be the story element,
+buttonOne, buttonTwo, and buttonThree are the text on the buttons, and optionOne, optionTwo, and optionThree are the name of
+the objects that will load if the user clicks the corresponding button. You can add story anywhere, as long as it makes sense.
+
+
+##Project needs
+Chapter Three
+More story options
+Visual Engagement/ animation
+
