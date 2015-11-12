@@ -14,6 +14,7 @@ var paths = {
 	indexFileName: 'index.html',
 	styles: 'assets/css/main.css',
 	assets: ['assets/**', '!assets/{js,js/**}', '!assets/{libs,libs/**}', '!assets/{css,css/**}'],
+	assetsFolder: 'assets/',
 	build: 'build/'
 };
 
@@ -24,6 +25,9 @@ gulp.task('default', ['connectDev'], function () {
 	gulp.watch(paths.indexFilePath + paths.indexFileName, ['reload']);
 	gulp.watch(paths.styles, ['reload']);
 });
+
+// Compile build files
+gulp.task('build', ['usemin', 'copy-assets']);
 
 // Compile and minify resources
 gulp.task('usemin', ['clean-build', 'bundle-scripts'], function () {
@@ -38,18 +42,31 @@ gulp.task('usemin', ['clean-build', 'bundle-scripts'], function () {
 		.pipe(gulp.dest(paths.build));
 });
 
+// Copy remaining assets
+gulp.task('copy-assets', function () {
+    return gulp.src(paths.assets).pipe(gulp.dest(paths.build + paths.assetsFolder));
+});
+
 // Reset build folder
 gulp.task('clean-build', function () {
 	gulp.src(paths.build, {read: false})
 		.pipe(plugins.clean());
 });
 
-// Start server
+// Start development server
 gulp.task('connectDev', ['bundle-scripts'], function() {
 	plugins.connect.server({
 		root: [paths.indexFilePath],
 		port: 8000,
 		livereload: true
+	});
+});
+
+// Start build server
+gulp.task('connectBuild', function () {
+	plugins.connect.server({
+		root: [paths.build],
+		port: 8080
 	});
 });
 

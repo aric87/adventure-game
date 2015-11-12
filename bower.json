@@ -1,0 +1,23 @@
+{
+  "name": "adventure-game",
+  "description": "This is a choose your own adventure game. The story offers three options at each juncture, but some overlap. The story is very loosely inspired by a popular Disney movie.",
+  "main": "main.js",
+  "license": "ISC",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-material": "~0.11.4"    
+  }
+}
