@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var path = require('path');
 var plugins = require('gulp-load-plugins')({
 	pattern: ['gulp-*', 'gulp.*', 'add-stream'],
 	replaceString: /\bgulp[\-.]/
@@ -56,7 +57,7 @@ gulp.task('clean-build', function () {
 // Start development server
 gulp.task('connectDev', ['bundle-scripts'], function() {
 	plugins.connect.server({
-		root: [paths.indexFilePath],
+		root: path.resolve(paths.indexFilePath),
 		port: 8000,
 		livereload: true
 	});

@@ -1,1 +1,1 @@
-var both = one + two;
+var app = angular.module('advApp', []);

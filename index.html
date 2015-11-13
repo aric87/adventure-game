@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE>
+<html lang="en" ng-app="advApp">
 
 <head>
     <meta charset="utf-8">
@@ -8,13 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- build:css style.css -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/libs/angular-material/angular-material.css">
     <!-- endbuild -->
 </head>
 
 <body>
-    <div id="container">
-        <header>
+    <section id="site-content" layout="row" layout-align="center center" layout-fill layout-padding ng-cloak>
+        
+        <md-toolbar>
             <h1>Choose your Destiny</h1>
+        </md-toolbar>
+        <div>
+            <p>1</p>
+        </div>
+        
+            <!--<div id="container">
+        <header>
+            
         </header>
         <div>
             <ul id="gameBlock">
@@ -25,7 +36,12 @@
             </ul>
             <button id="next">>>></button>
         </div>
-    </div>
+    </div>-->
+        
+
+
+    </section>
+
     <!--build:vendor assets/lib.js-->
     <script src="assets/libs/angular/angular.js"></script>
     <script src="assets/libs/angular-aria/angular-aria.js"></script>
@@ -33,7 +49,6 @@
     <script src="assets/libs/angular-material/angular-material.js"></script>
     <!--endbuild-->
     <!--build:js main.js-->
-    <script src="choices.js"></script>
     <script src="assets/js/ng-scripts.js"></script>
     <!--endbuild-->
 
