@@ -16,7 +16,8 @@ var paths = {
 	styles: 'assets/css/main.css',
 	assets: ['assets/**', '!assets/{js,js/**}', '!assets/{libs,libs/**}', '!assets/{css,css/**}'],
 	assetsFolder: 'assets/',
-	build: 'build/'
+	build: 'build/',
+	connectRoot: __dirname
 };
 
 // Start server and watch for file changes
@@ -57,7 +58,7 @@ gulp.task('clean-build', function () {
 // Start development server
 gulp.task('connectDev', ['bundle-scripts'], function() {
 	plugins.connect.server({
-		root: path.resolve(paths.indexFilePath),
+		root: paths.connectRoot,
 		port: 8000,
 		livereload: true
 	});

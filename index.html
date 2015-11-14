@@ -14,36 +14,37 @@
 </head>
 
 <body>
-    <section id="site-content" layout="row" layout-align="center center" layout-fill layout-padding ng-cloak>
+    <section id="site-content" layout="row" layout-align="center start" layout-fill layout-padding ng-cloak>
         
-        <md-toolbar>
-            <h1>Choose your Destiny</h1>
-        </md-toolbar>
-        <div>
-            <p>1</p>
-        </div>
-        
-            <!--<div id="container">
-        <header>
-            
-        </header>
-        <div>
-            <ul id="gameBlock">
-                <li id="mainText">
-                </li>
-                <li id="Options">
-                </li>
-            </ul>
-            <button id="next">>>></button>
-        </div>
-    </div>-->
-        
+        <div id="game-app" layout="column" layout-padding flex-gt-lg="50" flex="70" flex-sm="100" ui-view>
+            <!--PARTIALS LOAD HERE-->
+            <md-card>
+                <md-toolbar>
+                    <h2 class="md-toolbar-tools" layout-align="center">Choose your Destiny</h2>
+                </md-toolbar>
+                <md-content layout="column" layout-padding flex="none">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis saepe similique nam consectetur,
+                        assumenda sequi consequuntur vero quis, natus quia aut eaque. Inventore dolorem eaque beatae ducimus,
+                        corporis sed.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ut quis magnam ipsum quod quam veritatis
+                        quibusdam, labore, reprehenderit voluptas, nam dicta velit perferendis animi sed molestias eius quia
+                        ea!
+                    </p>
+                    <div id="game-buttons" layout="row" layout-align="center">
+                        <md-button class="md-raised md-accent md-hue-3">Option1</md-button>
+                        <md-button class="md-raised md-accent md-hue-3">Option2</md-button>
+                        <md-button class="md-raised md-accent md-hue-3">Option3</md-button>
+                    </div>
 
+                </md-content>
+            </md-card>
+        </div>
 
     </section>
 
     <!--build:vendor assets/lib.js-->
     <script src="assets/libs/angular/angular.js"></script>
+    <script src="assets/libs/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="assets/libs/angular-aria/angular-aria.js"></script>
     <script src="assets/libs/angular-animate/angular-animate.js"></script>
     <script src="assets/libs/angular-material/angular-material.js"></script>
