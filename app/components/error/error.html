@@ -3,10 +3,10 @@
 		<h2 class="md-toolbar-tools" layout-align="center">Page Not Found</h2>
 	</md-toolbar>
 	<md-content layout="column" layout-padding flex="none">
-		<p>Oops. Not sure how you got here, but this page wasn't found. Go back or start again from the beginning.</p>
+		<p>Oops. Not sure how you got here, but this page wasn't found. Go back to the previous page or start again from the beginning.</p>
 		<div id="game-buttons" layout-gt-sm="row" layout-sm="column" layout-align="center center" layout-wrap>
 			<div layout="row">
-				<md-button class="md-raised md-accent md-hue-3" ui-sref="{{err.prevState}}({{err.prevParams}})">Go Back {{ err.prevState }}</md-button>
+				<md-button class="md-raised md-accent md-hue-3" ui-sref="{{err.prevState}}({{err.prevParams}})">Go Back</md-button>
 			</div>
 			<div layout="row">
 				<md-button class="md-raised md-primary md-hue-2" ui-sref="home">Start Over</md-button>

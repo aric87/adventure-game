@@ -17,3 +17,26 @@ Chapter Three
 More story options
 Visual Engagement/ animation
 
+
+###Gulp Tasks
+
+####Default Gulp Task
+
+```
+$ gulp
+```
+Concatenate all AngularJS files located inside /app/ folder to /assets/js/ng-scripts.js. Inject HTML partials into $templateCache. Start dev server at http://localhost:8000, serve index.html at directory root. Set watchers on AngularJS files, HTML partials, index.html, and CSS styles, recompile files and reload server on change.
+
+####Build - Complie minified code for production
+
+```
+$ gulp build
+```
+Minify Angular, vendor libraries, and css code to /build/ folder. Copy additional assets to /build/assets/ folder.
+
+####Start Build Server
+
+```
+$ gulp connectBuild
+```
+Start build server at http://localhost:8080, serve index.html in /build/ folder.
