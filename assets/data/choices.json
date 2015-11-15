@@ -1,0 +1,603 @@
+{
+  "chap1": {
+    "mainText": "We meet our hero in a tavern, enjoying a flaggon of ale. An elder man spills through the door, ranting about a beast in a castle, who kidnapped his daughter. Everyone laughs, and brushes him off. What would you do?",
+    "paths": [
+      {
+        "buttonText": "Ignore the Crazy man",
+        "path": "ignore"
+      },
+      {
+        "buttonText": "Ask him about his daughter",
+        "path": "help"
+      },
+      {
+        "buttonText": "Rally the crowd into a mob and kill the man",
+        "path": "mob"
+      }
+    ]
+  },
+  "ignore": {
+    "mainText": "\"Wow!\" gasped the old man. \"No one will help!\" He comes to you and shows you a picture of his daughter. She is the most beautiful woman you have ever seen, and the man offers her to you, if you save her life",
+    "paths": [
+      {
+        "buttonText": "Kill him for bothering you further",
+        "path": "mob"
+      },
+      {
+        "buttonText": "Tell him your not interested, and leave",
+        "path": "quit"
+      },
+      {
+        "buttonText": "Listen to his story",
+        "path": "help"
+      }
+    ]
+  },
+  "help": {
+    "mainText": "\"Great!\", he says. The old man leads you to his home, where he outlines his story. Apparently, he was really intoxicated, and got lost in the woods. His daughter came to save him, and they were both captured by a terrible beasty, who kept his daughter to be his wife, releasing the useless old man.",
+    "paths": [
+      {
+        "buttonText": "Listen to more of the story",
+        "path": "listen"
+      },
+      {
+        "buttonText": "Tell him you lost interest, and leave",
+        "path": "quit"
+      },
+      {
+        "buttonText": "Stop him, your wasting time, and get going.",
+        "path": "headOut"
+      }
+    ]
+  },
+  "mob": {
+    "mainText": "\"Kill the crazy!\" Your rally cry rings out. The town gather around the tree in the middle of the square, and hang the old man. You hear a howl from the woods, and see a beast run through the square, take the old mans body, and leave. oops. ",
+    "paths": [
+      {
+        "buttonText": "Chase the beast",
+        "path": "alone"
+      },
+      {
+        "buttonText": "Not your problem",
+        "path": "quit"
+      },
+      {
+        "buttonText": "Loathe in self pity",
+        "path": "quit"
+      }
+    ]
+  },
+  "alone": {
+    "mainText": "Well, since the old man is dead, there's no one that knows where the beast lives... So, you decide to search his house, and find a map with a castle and a princess drawn on it. Coincidence? ",
+    "paths": [
+      {
+        "buttonText": "Follow the map",
+        "path": "chaptwo"
+      },
+      {
+        "buttonText": "Give up, this map is a hoax",
+        "path": "quit"
+      },
+      {
+        "buttonText": "Grab some friends, this will be tough",
+        "path": "friends"
+      }
+    ]
+  },
+  "quit": {
+    "mainText": "Well, I guess someone else can save the day, be the hero, get the girl... ",
+    "paths": [
+      {
+        "buttonText": "Try again!",
+        "path": "reset"
+      }
+    ]
+  },
+  "headOut": {
+    "mainText": "The old man points down a dark, and dreary trail. You ask the man if he's coming, and he hands you a map and runs away. Well, that sucks. What to do now?",
+    "paths": [
+      {
+        "buttonText": "If he isn't going, you aren't either",
+        "path": "quit"
+      },
+      {
+        "buttonText": "Take the map, and start walking",
+        "path": "chaptwo"
+      },
+      {
+        "buttonText": "Go grab some friends",
+        "path": "friends"
+      }
+    ]
+  },
+  "listen": {
+    "mainText": "The man continues on, blathering about the beast... and on, and on, and on. The beast had hair, and claws, and he was 10 feet tall... and lion's and tiger's and bear's , oh my.  Finally, you stop him in mid sentence...",
+    "paths": [
+      {
+        "buttonText": "\"Ok, old man.Let's go.\"",
+        "path": "headOut"
+      },
+      {
+        "buttonText": "\"I changed my mind.\"?",
+        "path": "quit"
+      },
+      {
+        "buttonText": "\"Strangle the old man, and go alone.\"",
+        "path": "alone"
+      }
+    ]
+  },
+  "tavern": {
+    "mainText": "You burned the tavern down.Well done. Now everyone is in the street, and really mad at you. They chase you out of town. You had better go get that princess to prove you were right.",
+    "paths": [
+      {
+        "buttonText": "Head into the woods after the beast",
+        "path": "chaptwo"
+      },
+      {
+        "buttonText": "Give up, because everyone hates you anyway",
+        "path": "quit"
+      },
+      {
+        "buttonText": "No, really, go into the woods",
+        "path": "chaptwo"
+      }
+    ]
+  },
+  "friends": {
+    "mainText": "You run back to the tavern, and spill through the door, ranting about a beast in a castle, who kidnapped the old man's daughter. Everyone laughs. They just heard this story. No one believed him, and they won't believe you. Are you insane? ",
+    "paths": [
+      {
+        "buttonText": "Darn, guess I'm going alone ",
+        "path": "chaptwo"
+      },
+      {
+        "buttonText": "This is impossible alone, guess she is on her own",
+        "path": "quit"
+      },
+      {
+        "buttonText": "Burn the tavern, then save the girl",
+        "path": "tavern"
+      }
+    ]
+  },
+  "chaptwo": {
+    "mainText": "You look at your map... It seems there is a fork in the road up ahead. Well, isn't that exciting. There's a short road! When you arrive at the fork, you notice the shorter road is a little grown in, and it seems to have an ominous feeling. The longer way is very well worn, and looks to have been traveled frequently. ",
+    "paths": [
+      {
+        "buttonText": "Take the sort route, and take your chances",
+        "path": "shortRoute"
+      },
+      {
+        "buttonText": "The well traveled road seems safer",
+        "path": "safeRoute"
+      },
+      {
+        "buttonText": "Turn back",
+        "path": "moral"
+      }
+    ]
+  },
+  "moral": {
+    "mainText": "You start heading back to town, but your conscience is getting the best of you, and you decide maybe you shouldn't stop. You have come this far, why not go get the girl",
+    "paths": [
+      {
+        "buttonText": "Forget your conscience",
+        "path": "safeRoute"
+      },
+      {
+        "buttonText": "Turn towards the safer road, and save the day",
+        "path": "shortRoute"
+      },
+      {
+        "buttonText": "Take the short route, and save the day, faster",
+        "path": "quit"
+      }
+    ]
+  },
+  "shortRoute": {
+    "mainText": "You turn down the dark path, cutting your way through the thick brush. Suddenly, you hear growling sounds. You realize that you have been so distracted by the brush, that you didn't notice the footprints on the ground from the wolves, that have now decided to make you their dinner. Luckily, you brought some things with you.",
+    "paths": [
+      {
+        "buttonText": "Offer them your food",
+        "path": "feed"
+      },
+      {
+        "buttonText": "Try to talk them out of eating you",
+        "path": "companion"
+      },
+      {
+        "buttonText": "Fight them",
+        "path": "fight"
+      }
+    ]
+  },
+  "feed": {
+    "mainText": "You toss all your food to the wolves. They head towards the food, giving you an escape route. You are starting to see the perils of this route, but you now have no food. You can take the chance of going foward, or head back towards the safe route. With the wolves occupied, you can stop and gather food on the way, but it will take more time.",
+    "paths": [
+      {
+        "buttonText": "continue donw the short path",
+        "path": "shortRouteTwo"
+      },
+      {
+        "buttonText": "hurry back to the long path, without food",
+        "path": "hungry"
+      },
+      {
+        "buttonText": "Slowly head back, gathering food on the way",
+        "path": "gatherFoodLong"
+      }
+    ]
+  },
+  "companion": {
+    "mainText": "You decide to try and talk to the wolves. You have dogs at home, afterall, and they are the same species. You offer some of your food, and crouch down to seem less intimidating. The wolves seem to entertain your friendly gesture. You decide to give them the rest of your food. The wolves now act very friendly, allowing you to pet them. You get up to leave, and the wolves follow you. Awesome! The friends you needed! Now you'll have to feed them too.",
+    "paths": [
+      {
+        "buttonText": "Continue down the short road",
+        "path": "shortRouteTwoWolves"
+      },
+      {
+        "buttonText": "Gather some food",
+        "path": "gatherFoodShort"
+      },
+      {
+        "buttonText": "Live with the wolves, who needs a princess",
+        "path": "liveWolves"
+      }
+    ]
+  },
+  "liveWolves": {
+    "mainText": "Although your new friends have accepted you, they are migratory and don't have a place for you to live. You realize sleeping in the woods, and eating berries all the time, would not be very satisfying. You decide to gather food to feed your new friends.",
+    "paths": [
+      {
+        "buttonText": "Continue down the short road",
+        "path": "shortRouteTwoWolves"
+      },
+      {
+        "buttonText": "Gather some food",
+        "path": "gatherFoodShort"
+      },
+      {
+        "buttonText": "Really, it's a good idea to gather some food",
+        "path": "gatherFoodShort"
+      }
+    ]
+  },
+  "fight": {
+    "mainText": "You decide to fight the wolves off. You have a hatchet, but it has dulled from cutting through the brush. The first wolf challenges you, and you are able to hit it before it bites, but the hatchet does little damage. You decide that fighting will lead to certain death. You can try to feed them, but they are a little mad now. Talking might have worked before, but it definitely won't now. ",
+    "paths": [
+      {
+        "buttonText": "Try to feed them",
+        "path": "feed"
+      },
+      {
+        "buttonText": "Run. Fast.",
+        "path": "run"
+      },
+      {
+        "buttonText": "Fight them anyway, maybe you'll intimidate them",
+        "path": "death"
+      }
+    ]
+  },
+  "run": {
+    "mainText": "The only way your going to make it is with a distraction. You can try dropping some of your food, to slow them down. If you don\t, the wolves will surely catch you.",
+    "paths": [
+      {
+        "buttonText": "Drop your food, you can get more",
+        "path": "runFood"
+      },
+      {
+        "buttonText": "Keep your food, you won a marathon once",
+        "path": "death"
+      },
+      {
+        "buttonText": "Stop, and try to reason with them... it might be better than dying tired",
+        "path": "death"
+      }
+    ]
+  },
+  "runFood": {
+    "mainText": "Great! You drop some of your food, and the wolves slow down. You get to a clearing, and see that the small amount you dropped wasn't enough, and you drop the remainder, and start running again. Finally, you are safe. When you look around, you realize you are lost. Luckily, you still have the map. You take it out, and see that you ran almost all the way back to the fork in the road, and you are now on the longer, yet safer road. you can head back to the fork, and try the short route again, or you can stay on the long road, but you now have no food.",
+    "paths": [
+      {
+        "buttonText": "Short route, you don't want to be hungry",
+        "path": "shortRouteTwo"
+      },
+      {
+        "buttonText": "Long road, you can make it without food.",
+        "path": "hungry"
+      },
+      {
+        "buttonText": "Stop and gather some food. You'll need it to fight the beast.",
+        "path": "gatherFoodLong"
+      }
+    ]
+  },
+  "gatherFoodLong": {
+    "mainText": "You gather some food, and get ready to head down the long road. This route is safer, so it should be an easier trek. On your way back you start thinking about home.",
+    "paths": [
+      {
+        "buttonText": "Save the princess, and go down the long road",
+        "path": "safeRoute"
+      },
+      {
+        "buttonText": "After the wolves, what more could happen?",
+        "path": "safeRoute"
+      },
+      {
+        "buttonText": "give up, and head home",
+        "path": "quit"
+      }
+    ]
+  },
+  "hungry": {
+    "mainText": "You decide to go down the long path without food. That was really a bad idea! Who travels through the woods, to save a princess, without food?! You arrive at the gate of the castle, and faint from hunger. Luckily, a traveling merchant scoops you up and brings you back to town. After some nourishment, and some storytelling from the local crowd, he drops you back at the fork in the road. You wake up, fully refreshed... and wonder how you got back here? Luckily, he left you with food. ",
+    "paths": [
+      {
+        "buttonText": "Short route",
+        "path": "shortRouteTwo"
+      },
+      {
+        "buttonText": "Long road",
+        "path": "safeRoute"
+      },
+      {
+        "buttonText": "Quit",
+        "path": "quit"
+      }
+    ]
+  },
+  "gatherFoodShort": {
+    "mainText": "You gather food up for you and your friends. You head down the path, and the wolves follow you. You arrive at the edge of the path, and see the castle. Having a group of wolves with you prevents you from heading up the road to the nearest town to get more help, or provisions. The sun is starting to set.",
+    "paths": [
+      {
+        "buttonText": "Head into the castle",
+        "path": "castleDark"
+      },
+      {
+        "buttonText": "Wait until morning",
+        "path": "castleWolves"
+      },
+      {
+        "buttonText": "Head to town anyway",
+        "path": "townWolves"
+      }
+    ]
+  },
+  "shortRouteTwoWolves": {
+    "mainText": "You decide to continue down the road. Although the wolves have become your friends, they know you have no more food and disband.",
+    "paths": [
+      {
+        "buttonText": "Who needs them, anyway.",
+        "path": "shortRouteTwo"
+      },
+      {
+        "buttonText": "Gather some food, and go get them back",
+        "path": "gatherFoodShort"
+      },
+      {
+        "buttonText": "Maybe you will see them again, on the way back",
+        "path": "shortRouteTwo"
+      }
+    ]
+  },
+  "shortRouteTwo": {
+    "mainText": "You can sense the end of the trail approaching. As you exit the woods, you see a massive castle. There are two ways to enter, but you can see that the path passing the castle is well used. You wonder if there is a chance there might be someone coming by soon that can help you. ",
+    "paths": [
+      {
+        "buttonText": "Head into the castle alone",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "Wait for someone to help you",
+        "path": "wait"
+      },
+      {
+        "buttonText": "Go up the path, and look for help",
+        "path": "goTown"
+      }
+    ]
+  },
+  "death": {
+    "mainText": "That went well. Your hero has died, leaving the princess in the clutches of the horrible beast. Bummer.",
+    "paths": [
+      {
+        "buttonText": "Try again, from the beginning",
+        "path": "reset"
+      },
+      {
+        "buttonText": "Start from the fork in the road",
+        "path": "chapTwo"
+      }
+    ]
+  },
+  "safeRoute": {
+    "mainText": "You take the safe route. It's a long, boring trip. You have to eat all the food you have to stay energized. As the sun begins to set, you see the castle in the distance. When you get to the gate, the daylight is completely gone, leaving only the moonlight to see the impressivness of the castle. You can see some light inside the castle, but the only way you see to get in, is the front door. You also notice a dim light up the path, that could be a town.",
+    "paths": [
+      {
+        "buttonText": "Walk up to the front door, and knock",
+        "path": "overTheCliff"
+      },
+      {
+        "buttonText": "Stay at the edge of the path until morning",
+        "path": "wait"
+      },
+      {
+        "buttonText": "Start over",
+        "path": "goTown"
+      }
+    ]
+  },
+  "overTheCliff": {
+    "mainText": "You knock on the front door, and a talking clock answers. He tells you to run. Thinking that you are losing it, you decide to walk to the edge of the path and wait. As soon as you turn around, a whoosh of air goes past your head. You are face to face with the beast. He picks you up, carries you to the top of the castle, and throws you off. Luckily, you land in a haystack and awaken to the sounds of a passing merchant",
+    "paths": [
+      {
+        "buttonText": "Follow him back to town",
+        "path": "goTown"
+      },
+      {
+        "buttonText": "Ignore him, and wait until morning",
+        "path": "wait"
+      },
+      {
+        "buttonText": "He's huge. Quit now, or you will surely die",
+        "path": "quit"
+      }
+    ]
+  },
+  "goTown": {
+    "mainText": "You venture around the town, speaking with some of the local people. They tell you that the beast used to be a prince, but was transformed by a spell. After spending some time in town, you get the feeling that the people will be of no help to you. They did, however, tell you that the tunnel into the basement is the only way into the castle.",
+    "paths": [
+      {
+        "buttonText": "Try to steal some supplies",
+        "path": "steal"
+      },
+      {
+        "buttonText": "head to the tunnel",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "Head home",
+        "path": "quit"
+      }
+    ]
+  },
+  "steal": {
+    "mainText": "You get caught, and the village people lock you into the stocks. They value honor, and decide to hang you. You can try to convince them that your cause is noble, and maybe they will let you live.",
+    "paths": [
+      {
+        "buttonText": "Tell them your story",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "Accept your punishment",
+        "path": "death"
+      },
+      {
+        "buttonText": "Offer them some money",
+        "path": "death"
+      }
+    ]
+  },
+  "wait": {
+    "mainText": "You awake in the morning, to the sound of a cart passing. You realize that you slept through the night on the side of the road. Lucky for you, no creatures made dinner of you. The man on the cart see's you, and tell's you that the beast has a bad temper, but stays in his castle. You thank him for the tip, and he leaves. You see that there is a tunnel into the basement, and a front door, but no other way in. ",
+    "paths": [
+      {
+        "buttonText": "Head up to the door",
+        "path": "overTheCliff"
+      },
+      {
+        "buttonText": "Try sneaking in the tunnel",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "Try climbing the castle.",
+        "path": "climb"
+      }
+    ]
+  },
+  "climb": {
+    "mainText": "You start climbing the castle wall, and realize that it's too slippery. Having exhausted all other options, you head for the tunnel. Starting in the basement wasn't your first choice, but it will have to do.",
+    "paths": [
+      {
+        "buttonText": "You head to the tunnel",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The basement has a bad smell",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The door is ornate, however",
+        "path": "chapThree"
+      }
+    ]
+  },
+  "castleWolves": {
+    "mainText": "You awake in the morning, to the sound of a cart passing. You realize that you slept through the night on the side of the road. Lucky for you, no creatures made dinner of you. The man on the cart see's you, and tell's you that the beast has a bad temper, but stays in his castle, and the only way in is the tunnel into the basement. You thank him for the tip, and he leaves. You can head to the tunnel, head to town, or you can try the front door.",
+    "paths": [
+      {
+        "buttonText": "Head to the tunnel",
+        "path": "chapThreeWolves"
+      },
+      {
+        "buttonText": "Head to town",
+        "path": "townWolves"
+      },
+      {
+        "buttonText": "Try the front door",
+        "path": "frontDoor"
+      }
+    ]
+  },
+  "frontDoor": {
+    "mainText": "The beast smells the wolves and meets you at the front door. After he finishes wiping out the wolves, he turns to you. Luckily, you are able to run and hide before he see's you. You wait for hours before you look up. In front of you lies the entrance to the tunnel.",
+    "paths": [
+      {
+        "buttonText": "You head to the tunnel",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The basement has a bad smell",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The door is ornate, however",
+        "path": "chapThree"
+      }
+    ]
+  },
+  "castleDark": {
+    "mainText": "You try to get into the castle at night. The beast catches you and scares off all of the wolves. Luckily, you make it outta there. You sleep in the woods until morning. When you wake up, a passing merchant points you to a tunnel that goes into the basement.",
+    "paths": [
+      {
+        "buttonText": "You head to the tunnel",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The basement has a bad smell",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The door is ornate, however",
+        "path": "chapThree"
+      }
+    ]
+  },
+  "townWolves": {
+    "mainText": "You bring your pack of wolves into town. The towns folk start shooting. You just lost the only allies you had, and the townsfolk sent you packing. Whoops. Guess it's you versus the beast. Luckily, on the way back to the castle, you notice there is a tunnel into the castle... You decide it's shorter than going all the way to the front door.",
+    "paths": [
+      {
+        "buttonText": "You head to the tunnel",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The basement has a bad smell",
+        "path": "chapThree"
+      },
+      {
+        "buttonText": "The door is ornate, however",
+        "path": "chapThree"
+      }
+    ]
+  },
+  "chapThree": {
+    "mainText": "You have reached chapter three, which is still being written. Cheers!",
+    "paths": [
+      {
+        "buttonText": "Start over",
+        "path": "reset"
+      }
+    ]
+  },
+  "chapThreeWolves": {
+    "mainText": "You have reached chapter three, which is still being written. Cheers!",
+    "paths": [
+      {
+        "buttonText": "Start over",
+        "path": "reset"
+      }
+    ]
+  }
+}
