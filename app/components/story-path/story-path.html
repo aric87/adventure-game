@@ -7,7 +7,7 @@
 		<div id="game-buttons" layout-gt-sm="row" layout-sm="column" layout-align="center center" layout-wrap>
 			<div ng-repeat="option in story.options">
 				<div layout="row">
-					<md-button class="md-raised md-accent md-hue-3" ng-bind="::option.buttonText" aria-label="::option.path" ui-sref="storyPath({path: option.path})"></md-button>
+					<md-button class="md-raised" ng-class="option.path=='reset' ? ['md-primary', 'md-hue-2'] : ['md-accent','md-hue-3']" ng-bind="::option.buttonText" aria-label="::option.path" ui-sref="storyPath({path: option.path})"></md-button>
 				</div>
 			</div>
 		</div>

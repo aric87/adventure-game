@@ -139,7 +139,7 @@
         "path": "quit"
       },
       {
-        "buttonText": "Mo, really, go into the woods",
+        "buttonText": "No, really, go into the woods",
         "path": "chaptwo"
       }
     ]
@@ -409,10 +409,6 @@
       {
         "buttonText": "Start from the fork in the road",
         "path": "chapTwo"
-      },
-      {
-        "buttonText": "Thanks for playing!!",
-        "path": "reset"
       }
     ]
   },
@@ -587,16 +583,8 @@
     ]
   },
   "chapThree": {
-    "mainText": "You have reaches chapter three, which is still being written. Cheers!",
+    "mainText": "You have reached chapter three, which is still being written. Cheers!",
     "paths": [
-      {
-        "buttonText": "Try again, for more action",
-        "path": "reset"
-      },
-      {
-        "buttonText": "Sorry, this takes time.",
-        "path": "reset"
-      },
       {
         "buttonText": "Start over",
         "path": "reset"
@@ -604,16 +592,8 @@
     ]
   },
   "chapThreeWolves": {
-    "mainText": "You have reaches chapter three, which is still being written. Cheers!",
+    "mainText": "You have reached chapter three, which is still being written. Cheers!",
     "paths": [
-      {
-        "buttonText": "Try again, for more action",
-        "path": "reset"
-      },
-      {
-        "buttonText": "Sorry, this takes time.",
-        "path": "reset"
-      },
       {
         "buttonText": "Start over",
         "path": "reset"

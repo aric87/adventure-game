@@ -6,10 +6,10 @@
 		<p>Oops. Not sure how you got here, but this page wasn't found. Go back or start again from the beginning.</p>
 		<div id="game-buttons" layout-gt-sm="row" layout-sm="column" layout-align="center center" layout-wrap>
 			<div layout="row">
-				<md-button class="md-raised md-accent md-hue-3" ui-sref="">Go Back</md-button>
+				<md-button class="md-raised md-accent md-hue-3" ui-sref="{{err.prevState}}({{err.prevParams}})">Go Back {{ err.prevState }}</md-button>
 			</div>
 			<div layout="row">
-				<md-button class="md-raised md-accent md-hue-3" ui-sref="home">Start Over</md-button>
+				<md-button class="md-raised md-primary md-hue-2" ui-sref="home">Start Over</md-button>
 			</div>
 		</div>
 

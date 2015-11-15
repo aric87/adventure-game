@@ -1,15 +1,15 @@
 var app = angular.module('advApp', ['ngMaterial','ui.router','advAppRoutes']);
 
-app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+app.config(['$urlRouterProvider', function($urlRouterProvider) {
 	$urlRouterProvider.otherwise('/');
-	$stateProvider.state('error', {
-		url: '/error',
-		templateUrl: 'components/error/error.html'
-	});
 }]);
 
-
-
+app.run(['$rootScope', '$state', function ($rootScope, $state) {
+    $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        $state.previous = fromState;
+        $state.previousParams = fromParams;
+    });
+}]);
 
 
 function DEBUG(msg, obj) {
