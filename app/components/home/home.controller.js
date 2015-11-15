@@ -6,6 +6,6 @@ appRoutes.config(['$stateProvider', function($stateProvider) {
 	});
 }]);
 
-appRoutes.controller('HomeCtrl', [function() {
-	this.introText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis saepe similique nam consectetur, assumenda sequi	consequuntur vero quis, natus quia aut eaque. Inventore dolorem eaque beatae ducimus, corporis sed."; 	
+appRoutes.controller('HomeCtrl', [function() {	
+	
 }]);

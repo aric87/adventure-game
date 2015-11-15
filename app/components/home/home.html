@@ -1,16 +1,12 @@
 <md-card>
 	<md-toolbar>
-		<h2 class="md-toolbar-tools" layout-align="center">Choose your Destiny</h2>
+		<h2 class="md-toolbar-tools" layout-align="center">Adventure Game</h2>
 	</md-toolbar>
 	<md-content layout="column" layout-padding flex="none">
-		<p>{{ ctrl.introText }}</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ut quis magnam ipsum quod quam veritatis quibusdam, labore,
-			reprehenderit voluptas, nam dicta velit perferendis animi sed molestias eius quia ea!
+		<p>Welcome to the Adventure of a lifetime. You will embark on a voyage to save the princess from the evil Bowser. Choose carefully, adventurer, as your decisions affect the outcome!
 		</p>
 		<div id="game-buttons" layout="row" layout-align="center">
-			<md-button class="md-raised md-accent md-hue-3">Option1</md-button>
-			<md-button class="md-raised md-accent md-hue-3">Option2</md-button>
-			<md-button class="md-raised md-accent md-hue-3">Option3</md-button>
+			<md-button class="md-raised md-accent md-hue-3" ui-sref="storyPath({path: 'chap1'})">Begin</md-button>		
 		</div>
 
 	</md-content>

@@ -189,7 +189,6 @@
 		"optionThree": "quit"
 	},
 	"gatherFoodShort": {
-		/*this route has wolf companions*/
 		"mainText": "You gather food up for you and your friends. You head down the path, and the wolves follow you. You arrive at the edge of the path, and see the castle. Having a group of wolves with you prevents you from heading up the road to the nearest town to get more help, or provisions. The sun is starting to set.",
 		"buttonOne": "Head into the castle",
 		"buttonTwo": "Wait until morning",
@@ -315,7 +314,6 @@
 		"optionTwo": "chapThree",
 		"optionThree": "chapThree"
 	},
-	/* chapter three will begin at the tunnel. */
 	"chapThree": {
 		"mainText": "You have reaches chapter three, which is still being written. Cheers!",
 		"buttonOne": "Try again, for more action",

@@ -1,1 +1,1 @@
-var appRoutes = angular.module('advAppRoutes', ['ui.router', 'templates']);
+var appRoutes = angular.module('advAppRoutes', ['ui.router', 'templates','sharedServices']);

@@ -7,3 +7,13 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl: 'components/error/error.html'
 	});
 }]);
+
+
+
+
+
+function DEBUG(msg, obj) {
+    var dt = new Date();
+    var timestamp = dt.toLocaleTimeString();
+    console.log(timestamp, msg, obj);
+}

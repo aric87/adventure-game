@@ -1,0 +1,15 @@
+<md-card>
+	<md-toolbar>
+		<h2 class="md-toolbar-tools" layout-align="center">Choose your Destiny</h2>
+	</md-toolbar>
+	<md-content layout="column" layout-padding flex="none">
+		<p layout-padding layout-margin ng-bind="story.mainText"></p>
+		<div id="game-buttons" layout-gt-sm="row" layout-sm="column" layout-align="center center" layout-wrap>
+			<div ng-repeat="option in story.options">
+				<div layout="row">
+					<md-button class="md-raised md-accent md-hue-3" ng-bind="::option.buttonText" aria-label="::option.path" ui-sref="storyPath({path: option.path})"></md-button>
+				</div>
+			</div>
+		</div>
+	</md-content>
+</md-card>
